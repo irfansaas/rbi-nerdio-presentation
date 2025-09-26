@@ -561,7 +561,7 @@ const NerdioPresentation = () => {
                   min="100" 
                   max="500" 
                   value={monthlyUsers}
-                  onChange={(e) => setMonthlyUsers(e.target.value)}
+                  onChange={(e) => setMonthlyUsers(Number(e.target.value))}
                   className="w-full"
                 />
                 <div className="text-center text-2xl font-bold mt-2">{monthlyUsers} users</div>
