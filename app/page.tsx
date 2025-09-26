@@ -977,7 +977,7 @@ const NerdioPresentation = () => {
               onClick={() => setCurrentSlide(4)}
               className="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg text-white text-sm font-bold">
               <Target className="inline mr-2" size={16} />
-              Jump to Close
+              JTC
             </button>
           </div>
           <div className="text-white text-sm">
