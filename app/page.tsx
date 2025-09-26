@@ -61,13 +61,13 @@ const NerdioPresentation = () => {
     }
   }, [timerActive]);
 
-  const formatTime = (seconds) => {
+  const formatTime = (seconds: number) => {
     const mins = Math.floor(seconds / 60);
     const secs = seconds % 60;
     return `${mins}:${secs.toString().padStart(2, '0')}`;
   };
 
-  const handleCostChange = (key, value) => {
+  const handleCostChange = (key: string, value: string) => {
     setCosts(prev => ({
       ...prev,
       [key]: parseFloat(value) || 0
